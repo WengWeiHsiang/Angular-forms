@@ -1,0 +1,29 @@
+<h2>個人資料</h2>
+<div class="form-group">
+  <form [formGroup]="verifyForm">
+    <div class="name">
+      <input type="text" placeholder="姓名" name="name" formControlName="name">
+    </div>
+
+    <div class="id row">
+      <input type="text" placeholder="身份證字號" name="id" formControlName="id">
+      <span *ngIf="verifyForm.get('id').invalid">
+        ID is error!
+      </span>
+    </div>
+
+    <div class="birth">
+      <input type="text" placeholder="yyyymmdd" name="birth" formControlName="birth">
+    </div>
+    <div class="phone">
+      <input type="text" placeholder="09XXXXXXXX" name="phone" formControlName="phone">
+    </div>
+    <div class="email">
+      <input type="email" placeholder="XXXX@XXXXX.com" name="email" formControlName="email">
+    </div>
+    <div class="days">
+      <input type="number" placeholder="入住天數" name="days" formControlName="days">
+    </div>
+  </form>
+</div>
+<p>個人資料為:{{ verifyForm.value | json}}</p>

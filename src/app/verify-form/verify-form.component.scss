@@ -1,0 +1,19 @@
+.name .ng-valid,
+.id .ng-valid,
+.phone .ng-valid,
+.birth .ng-valid,
+.id .ng-valid,
+.days .ng-valid,
+.email .ng-valid {
+  background-color: rgba($color: #56c29e, $alpha: 0.4)
+}
+
+.name .ng-invalid,
+.id .ng-invalid,
+.phone .ng-invalid,
+.birth .ng-invalid,
+.id .ng-invalid,
+.days .ng-invalid,
+.email .ng-invalid {
+  background-color: rgba($color: #df6ca5, $alpha: 0.4)
+}
